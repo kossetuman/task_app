@@ -59,5 +59,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails'
 gem 'html2slim'
 
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.5'
+gem 'jquery-rails'
 gem 'rails-i18n', '~> 5.1'
+
+gem 'execjs'
+
+gem 'mini_racer', platforms: :ruby
+
+#Rubyのインテリセンス強化
+#gem 'solargraph', group: :development
