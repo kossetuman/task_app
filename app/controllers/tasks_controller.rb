@@ -12,9 +12,12 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.n ew(task_params)
-    @task.save
-    redirect_to root_path, notice: "タスク「#{@task.name}」を登録致しました。"
+    @task = Task.new(task_params)
+    if @task.save
+      redirect_to root_path, notice: "タスク「#{@task.name}」を登録致しました。"
+    else
+      render :new
+    end    
   end
 
   def edit
