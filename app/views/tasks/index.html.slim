@@ -11,4 +11,5 @@ table.table.table-hover
     - @tasks.each do |task|
       tr 
         td = link_to task.name, task 
+        
         td = task.created_at
