@@ -214,4 +214,12 @@ ja:
     name: 名称
     description: 詳しい説明
     created_at: 登録日時
-    update_at: 更新日時    
+    update_at: 更新日時  
+
+    user:
+      name: '名前'
+      email: 'メールアドレス'
+      admin: '管理者権限'  
+      password: 'パスワード'
+      created_at: '登録日時'
+      updated_at: '更新日時'
